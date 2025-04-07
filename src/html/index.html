@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Шахматы</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../node_modules/chessground/assets/chessground.base.css">
+  <link rel="stylesheet" href="../node_modules/chessground/assets/chessground.brown.css">
+  <link rel="stylesheet" href="../node_modules/chessground/assets/chessground.cburnett.css">
+  <style>
+    #board {
+      width: 600px;
+      height: 600px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<header>
+  <h1>Chess</h1>
+</header>
+<body>
+  <div class="chessground"id="board"></div>
+  <script type="module">
+    import {Chessground} from '../node_modules/chessground/dist/chessground.min.js';
+
+    const config = {
+      turnColor: 'white', // Белые начинают первыми
+      drawable: {
+        enabled: false, // Включаем возможность рисования стрелок и кругов
+      }
+    };
+    const ground = Chessground(document.getElementById('board'), config);
+  </script>
+  <button id="close">Закрыть</button>
+  <script>
+      const {ipcRenderer} = require('electron'); // Используем require в рендер-процессе с nodeIntegration
+      document.getElementById('close').addEventListener('click', () => {
+      ipcRenderer.send('close-win');}) // отправка сообщения для выключения приложения
+  </script>
+  
+</body>
+</html>
