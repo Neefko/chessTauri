@@ -12,7 +12,8 @@
       {
         "title": "chesstauri",
         "width": 800,
-        "height": 600
+        "height": 600, 
+        "url": "./html/main.html"
       }
     ],
     "security": {
