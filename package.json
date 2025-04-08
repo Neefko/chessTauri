@@ -10,6 +10,8 @@
     "@tauri-apps/cli": "^2"
   },
   "dependencies": {
+    "chess": "^1.2.2",
+    "chess.js": "^1.2.0",
     "chessground": "^9.1.1"
   }
 }
