@@ -43,7 +43,7 @@
 #*.jpg   binary
 #*.png   binary
 #*.gif   binary
-src/chessground/* linguist-vendored
+/src/chessground/* linguist-vendored
 ###############################################################################
 # diff behavior for common document formats
 # 
