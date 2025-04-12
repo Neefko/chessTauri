@@ -1,3 +1,19 @@
 cg-board {
-    background-color: #ffffff !important;
+    background-color: #ffffff8b !important;
+    box-shadow: 4px 4px 6px #57606a;
+}
+
+#chess-div {
+    font-size: 0;
+    margin-top: 45px;
+    margin-right: 250px;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-evenly;
+}
+#main-menu {
+    height: 25px !important;
+}
+#close-btn {
+    text-align: center
 }

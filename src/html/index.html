@@ -20,20 +20,23 @@
 <header>
 </header>
 <body>
-  <div class="chessground"id="board"></div>
-  <script type="module">
-    import {Chessground} from '../chessground/dist/chessground.min.js';
+  <div id="chess-div">
+    <a id="main-menu" href="main.html">Главное меню</a>
+    <div class="chessground" id="board"></div></div>
+    <script type="module">
+      import {Chessground} from '../chessground/dist/chessground.min.js';
 
-    const config = {
-      turnColor: 'white',
-      drawable: {
-        enabled: false,
-      }
-    };
-    const ground = Chessground(document.getElementById('board'), config);
-  </script>
-  <a href="main.html">Назад</a>
-  <button id="close-btn">Закрыть</button>
+      const config = {
+        turnColor: 'white',
+        drawable: {
+          enabled: false,
+       }
+
+      };
+      const ground = Chessground(document.getElementById('board'), config);
+    </script>
+  
+  <a id="close-btn">Закрыть</a>
   <script src="../main.js"></script>
 </body>
 </html>
