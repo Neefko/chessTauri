@@ -2,6 +2,11 @@ cg-board {
     background-color: #ffffff8b !important;
     box-shadow: 4px 4px 6px #57606a;
 }
+#board {
+    width: 600px;
+    height: 600px;
+    margin: 20px auto;
+  }
 
 #chess-div {
     font-size: 0;
